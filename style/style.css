@@ -8,7 +8,7 @@
 }
 /* header style */
 .header{
- background-color: #fd00df94;   
+ background-color: #FF900E1A;   
  padding:50px 240px;
  
 }
@@ -51,12 +51,12 @@ nav li a {
     font-size: 4rem;
     color: #131313;
 }
-.banner-description{
+.common-color{
     color: #727272;
 
 }
 .primary-btn{
-    background-color: azure;
+    background-color: #FF900E;
     padding: 20px 25px;
     border-radius: 8px;
     margin: 10px 0 50px 0;
@@ -78,7 +78,7 @@ nav li a {
 }
 main{
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 .teams-img-container{
     display: grid;
@@ -101,16 +101,14 @@ main{
 }
 .quick{
     color: #727272;
-    ;
+    font-weight: 500;
 }
 .our-item{
   color: #131313;  
 }
 .features{
     color: #FF900E; }
-.team-dec{
-    color: #727272;
-}
+
 
 /* Mobile device */
 @media screen and (max-width:576px) {
@@ -118,15 +116,23 @@ main{
         padding: 20px; }
         .banner-title{
             font-size: 3rem; }
-    nav {
+    nav,  .teams-container{
         flex-direction: column;}
     .nav-title{
         font-size:1.5rem ;
     }
+    .teams-img-container{
+        grid-template-columns:1fr ;
+    }
+    .team-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 }
 /*Tablet device*/
 @media screen and (min-width:577px) and (max-width:960px) {
     .header{
         padding: 50px; }
-    nav{flex-direction: column; }
+    nav ,.teams-container{flex-direction: column; }
 }
